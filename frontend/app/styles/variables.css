@@ -1,0 +1,44 @@
+/* CSS Variables - Global Theme */
+:root {
+	/* Primary Colors from Style Guide */
+	--primary-1: #1a1a1a; /* Primary dark */
+	--primary-2: #2d2d2d; /* Primary medium */
+	--primary-3: #f5f5f5; /* Primary light */
+
+	/* Secondary Colors from Style Guide */
+	--secondary: #618bfb; /* Secondary accent */
+	--secondary-2: #ff56b3;
+	--accent: #69bbfb; /* Secondary blue */
+
+	/* System Colors */
+	--error: #cc2727;
+	--success: #28a745;
+	--warning: #ffc107;
+	--info: #17a2b8;
+
+	/* Background Colors */
+	--bg-light: #f5f5f5;
+	--bg-white: #ffffff;
+	--bg-dark: #f8f9fa;
+
+	/* Text Colors from Style Guide */
+	--text-primary: #1a1a1a; /* For headings */
+	--text-secondary: #515151; /* For body text */
+	--text-muted: #888888;
+
+	/* Other UI Elements */
+	--border-color: #e0e0e0;
+	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+	--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+	--shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.2);
+	--border-radius: 8px;
+	--border-radius-lg: 12px;
+	--transition: all 0.3s ease;
+	--font-montserrat: "Montserrat", sans-serif;
+	--font-roboto: "Roboto", sans-serif;
+	--font-family: var(--font-montserrat);
+
+	/* Yellow colors for special elements */
+	--yellow-primary: #d4af37; /* For special headings */
+	--yellow-light: #f5f5f5; /* Light yellow for hover states */
+}

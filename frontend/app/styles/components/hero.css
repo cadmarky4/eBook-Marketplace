@@ -1,0 +1,38 @@
+/* Hero Section */
+.hero-section {
+	background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+	padding: 3rem 1.5rem;
+	text-align: center;
+}
+
+.hero-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-title {
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	font-weight: 800;
+	color: var(--bg-white);
+	margin-bottom: 1rem;
+	line-height: 1.1;
+	font-family: var(--font-montserrat);
+}
+
+.hero-subtitle {
+	font-size: clamp(1rem, 2.5vw, 1.25rem);
+	color: var(--bg-white);
+	margin-bottom: 2rem;
+	opacity: 0.9;
+	font-family: var(--font-roboto);
+}
+
+.hero-card {
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: var(--border-radius-lg);
+	padding: 2rem;
+	box-shadow: var(--shadow-lg);
+	margin: 0 auto;
+	max-width: 600px;
+}
