@@ -1,0 +1,199 @@
+/* Form Styles */
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.form-label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	color: var(--text-primary);
+	font-family: var(--font-montserrat);
+}
+
+.form-input {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border: 2px solid var(--border-color);
+	border-radius: var(--border-radius);
+	font-size: 1rem;
+	background-color: var(--bg-white);
+	color: var(--text-primary);
+	transition: var(--transition);
+	min-height: 44px;
+	font-family: var(--font-roboto);
+}
+
+.form-input:focus {
+	border-color: var(--accent);
+	box-shadow: 0 0 0 3px rgba(105, 187, 251, 0.2);
+}
+
+.form-input.error {
+	border-color: var(--error);
+}
+
+.form-input.error:focus {
+	box-shadow: 0 0 0 3px rgba(204, 39, 39, 0.2);
+}
+
+.form-error {
+	margin-top: 0.25rem;
+	font-size: 0.875rem;
+	color: var(--error);
+	font-family: var(--font-roboto);
+}
+
+/* Search Bar 
+.search-bar-container {
+	margin-bottom: 20px;
+}
+
+.search-input-wrapper {
+	position: relative;
+	max-width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.search-icon {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--text-muted);
+	z-index: 2;
+}
+
+.search-input {
+	width: 100%;
+	padding: 14px 16px 14px 40px;
+	border: 2px solid var(--border-color);
+	border-radius: var(--border-radius-lg);
+	font-size: 16px; /* Prevents zoom on iOS 
+	background: var(--bg-white);
+	color: var(--text-primary);
+	transition: var(--transition);
+}*/
+
+.search-input:focus {
+	outline: none;
+	border-color: var(--secondary);
+	box-shadow: 0 0 0 3px rgba(97, 139, 251, 0.1);
+}
+
+.search-clear-btn {
+	position: absolute;
+	right: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: none;
+	color: var(--text-muted);
+	cursor: pointer;
+	padding: 4px;
+	border-radius: 50%;
+	transition: var(--transition);
+}
+
+.search-clear-btn:hover {
+	background: var(--bg-light);
+	color: var(--text-primary);
+}
+
+/* Filters */
+.search-filters {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-bottom: 16px;
+}
+
+.filter-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.filter-label {
+	font-weight: 600;
+	color: var(--text-primary);
+	font-size: 1rem;
+}
+
+.filter-toggle-btn {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background: var(--bg-white);
+	border: 2px solid var(--border-color);
+	color: var(--text-secondary);
+	padding: 6px 12px;
+	border-radius: var(--border-radius);
+	font-size: 14px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.filter-toggle-btn:hover {
+	border-color: var(--accent);
+	color: var(--accent);
+}
+
+.category-buttons-container {
+	flex: 1;
+	overflow-x: auto;
+}
+
+.category-buttons {
+	display: flex;
+	gap: 12px;
+	padding: 8px 0;
+	min-width: max-content;
+}
+
+.category-btn {
+	padding: 8px 16px;
+	border: 2px solid var(--border-color);
+	background: var(--bg-white);
+	color: var(--text-secondary);
+	border-radius: 25px;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: var(--transition);
+	white-space: nowrap;
+}
+
+.category-btn:hover {
+	border-color: var(--secondary);
+	color: var(--secondary);
+}
+
+.category-btn.active {
+	background: var(--secondary);
+	border-color: var(--secondary);
+	color: white;
+}
+
+.advanced-filter-btn {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 16px;
+	border: 2px solid var(--border-color);
+	background: var(--bg-white);
+	color: var(--text-secondary);
+	border-radius: var(--border-radius);
+	font-size: 14px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+.advanced-filter-btn:hover {
+	border-color: var(--accent);
+	color: var(--accent);
+}

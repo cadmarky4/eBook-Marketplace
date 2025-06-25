@@ -1,0 +1,165 @@
+/* Typography System */
+
+/* Headings */
+h1,
+.h1 {
+	font-size: 3.583rem; /* 57.33px */
+	line-height: 1.2;
+	font-weight: 700;
+	font-family: var(--font-montserrat);
+	color: var(--yellow-primary); /* Heading 1 uses yellow */
+	margin: 0;
+}
+
+h2,
+.h2 {
+	font-size: 2.986rem; /* 47.78px */
+	line-height: 1.2;
+	font-weight: 700;
+	font-family: var(--font-montserrat);
+	color: var(--bg-light); /* Heading 2 uses light background */
+	margin: 0;
+}
+
+h3,
+.h3 {
+	font-size: 2.488rem; /* 39.81px */
+	line-height: 1.2;
+	font-weight: 700;
+	font-family: var(--font-montserrat);
+	color: var(--yellow-primary); /* Heading 3 uses yellow */
+	margin: 0;
+}
+
+h4,
+.h4 {
+	font-size: 2.074rem; /* 33.18px */
+	line-height: 1.2;
+	font-weight: 700;
+	font-family: var(--font-montserrat);
+	color: var(--text-primary);
+	margin: 0;
+}
+
+h5,
+.h5 {
+	font-size: 1.728rem; /* 27.65px */
+	line-height: 1.2;
+	font-weight: 600;
+	font-family: var(--font-montserrat);
+	color: var(--text-primary);
+	margin: 0;
+}
+
+h6,
+.h6 {
+	font-size: 1.44rem; /* 23.04px */
+	line-height: 1.2;
+	font-weight: 600;
+	font-family: var(--font-montserrat);
+	color: var(--text-primary);
+	margin: 0;
+}
+
+/* Paragraph Styles */
+p {
+	color: var(--text-secondary);
+	margin: 0;
+	line-height: 1.7;
+}
+
+.paragraph-big {
+	font-size: 1.2rem; /* 19.2px */
+	line-height: 1.7;
+	font-family: var(--font-roboto);
+}
+
+.paragraph-regular {
+	font-size: 1rem; /* 16px */
+	line-height: 1.7;
+	font-family: var(--font-roboto);
+}
+
+.paragraph-small {
+	font-size: 0.833rem; /* 13.33px */
+	line-height: 1.7;
+	font-family: var(--font-roboto);
+}
+
+/* Font Weights - Montserrat */
+.montserrat-light {
+	font-family: var(--font-montserrat);
+	font-weight: 300;
+}
+
+.montserrat-regular {
+	font-family: var(--font-montserrat);
+	font-weight: 400;
+}
+
+.montserrat-medium {
+	font-family: var(--font-montserrat);
+	font-weight: 500;
+}
+
+.montserrat-semibold {
+	font-family: var(--font-montserrat);
+	font-weight: 600;
+}
+
+.montserrat-bold {
+	font-family: var(--font-montserrat);
+	font-weight: 700;
+}
+
+.montserrat-extrabold {
+	font-family: var(--font-montserrat);
+	font-weight: 800;
+}
+
+/* Font Weights - Roboto */
+.roboto-light {
+	font-family: var(--font-roboto);
+	font-weight: 300;
+}
+
+.roboto-regular {
+	font-family: var(--font-roboto);
+	font-weight: 400;
+}
+
+.roboto-medium {
+	font-family: var(--font-roboto);
+	font-weight: 500;
+}
+
+.roboto-semibold {
+	font-family: var(--font-roboto);
+	font-weight: 600;
+}
+
+.roboto-bold {
+	font-family: var(--font-roboto);
+	font-weight: 700;
+}
+
+/* Font Scale Helper Classes */
+.font-scale-p {
+	font-size: 1rem; /* 16px/1rem base */
+}
+
+.font-scale-third {
+	font-size: 1.2rem; /* Using the 1.200 scale factor from the guide */
+}
+
+/* Links */
+a {
+	color: var(--accent);
+	text-decoration: none;
+	transition: var(--transition);
+}
+
+a:hover {
+	color: var(--secondary);
+	text-decoration: underline;
+}

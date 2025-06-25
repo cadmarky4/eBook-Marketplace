@@ -1,0 +1,272 @@
+/* Subscription Page Styles - RECOLORED */
+
+.subscription-container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	background-color: #f8f9fa; /* Consistent light background */
+	min-height: 100vh;
+}
+
+.subscription-header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.subscription-title {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #222; /* Darker, more modern text */
+	margin-bottom: 0.5rem;
+}
+
+.subscription-subtitle {
+	color: #555; /* Softer secondary text */
+	font-size: 1.1rem;
+}
+
+/* Billing Toggle */
+.billing-toggle {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2.5rem;
+}
+
+.billing-btn {
+	padding: 10px 30px;
+	cursor: pointer;
+	border: 2px solid #e0e0e0;
+	background: none;
+	font-weight: 600;
+	font-size: 1rem;
+	color: #555;
+	transition: all 0.2s ease;
+}
+
+.billing-btn:first-of-type {
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+
+.billing-btn:last-of-type {
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-left: none;
+}
+
+.billing-btn.selected {
+	background-color: var(--primary-1, #007bff); /* Use a modern blue */
+	color: white;
+	border-color: var(--primary-1, #007bff);
+}
+
+/* Plans Grid */
+.plans {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+	.plans {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.plan-card {
+	background: white;
+	border-radius: 16px;
+	padding: 2rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	position: relative;
+	transition: all 0.2s ease;
+	border: 2px solid #e9ecef;
+}
+
+.plan-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.plan-card.premium {
+	background: linear-gradient(135deg, var(--secondary, #667eea), var(--primary-1, #007bff));
+	color: white;
+}
+
+.plan-card.selected {
+	border-color: var(--primary-1, #007bff);
+	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+.plan-header {
+	font-weight: 700;
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.plan-card.premium .plan-header {
+	color: white;
+}
+
+.plan-price {
+	font-weight: 800;
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.badge {
+	background-color: var(--primary-2, #764ba2);
+	color: white;
+	font-size: 0.75rem;
+	padding: 4px 10px;
+	border-radius: 20px;
+	font-weight: 600;
+}
+
+.plan-card.premium .badge {
+	background-color: rgba(255, 255, 255, 0.2);
+	color: white;
+}
+
+.features {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 2rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.features li {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	font-size: 0.95rem;
+}
+
+.features li i {
+	font-size: 18px;
+	color: var(--primary-1, #007bff);
+}
+
+.plan-card.premium .features li,
+.plan-card.premium .features li i {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/* Action Buttons */
+.btn-group {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.subscription-btn {
+	cursor: pointer;
+	padding: 1rem 2rem;
+	font-weight: 600;
+	border-radius: 8px;
+	font-size: 1rem;
+	border: none;
+	transition: all 0.2s ease;
+}
+
+.subscription-btn.free-trial {
+	background: white;
+	color: #333;
+	border: 2px solid #e0e0e0;
+}
+.subscription-btn.free-trial:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-btn.purchase {
+	background: var(--primary-1, #007bff);
+	color: white;
+}
+.subscription-btn.purchase:hover {
+	transform: translateY(-2px);
+	background: var(--secondary, #667eea);
+}
+
+/* FAQ Section */
+.faq-section {
+	background: white;
+	border-radius: 16px;
+	padding: 2.5rem;
+	margin-top: 3rem;
+}
+
+.faq-title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.faq-item {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+.faq-item:last-child {
+	margin-bottom: 0;
+}
+
+.faq-icon {
+	font-size: 24px;
+	color: var(--primary-1, #007bff);
+	flex-shrink: 0;
+	margin-top: 4px;
+}
+
+.faq-content strong {
+	display: block;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.faq-content p {
+	color: #555;
+	margin: 0;
+	line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+	.subscription-container {
+		padding: 1.5rem 1rem;
+	}
+	.subscription-title {
+		font-size: 1.75rem;
+	}
+	.billing-btn {
+		padding: 8px 20px;
+		font-size: 0.9rem;
+	}
+	.plan-card {
+		padding: 1.5rem;
+	}
+	.plan-price {
+		font-size: 2rem;
+	}
+	.btn-group {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.subscription-btn {
+		width: 100%;
+	}
+	.faq-section {
+		padding: 2rem 1.5rem;
+	}
+}

@@ -1,0 +1,237 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: var(--background-color, #fff9d0);
+	font-family: var(--font-family, "Arial, sans-serif");
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: var(--header-bg, #ffde59);
+	color: var(--header-text, #000);
+}
+
+.backButton {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	color: var(--primary-text, #000);
+}
+
+.menuButton {
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+.content {
+	flex: 1;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.bookHeader {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.coverContainer {
+	flex-shrink: 0;
+	width: 150px;
+	height: 210px;
+	border: 1px solid #ccc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--cover-bg, #ccc);
+}
+
+.placeholderCover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: #d0d0d0;
+	color: #666;
+	font-weight: bold;
+}
+
+.coverImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.titleSection {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	flex: 1;
+}
+
+.bookTitle {
+	margin: 0;
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: var(--primary-text, #000);
+}
+
+.author {
+	margin: 0;
+	color: var(--secondary-text, #666);
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+}
+
+.fullStar {
+	color: var(--star-color, #ffde59);
+}
+
+.halfStar {
+	color: var(--star-color, #ffde59);
+}
+
+.emptyStar {
+	color: var(--star-empty, #ccc);
+}
+
+.ratingCount {
+	font-size: 0.8rem;
+	color: var(--secondary-text, #666);
+	margin-left: 0.5rem;
+}
+
+.basicInfo {
+	margin-top: 1rem;
+}
+
+.infoRow {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+}
+
+.infoLabel {
+	font-weight: 500;
+	color: var(--secondary-text, #666);
+}
+
+.infoValue {
+	font-weight: 600;
+	color: var(--primary-text, #000);
+}
+
+.detailsContainer {
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid var(--divider-color, #ddd);
+	border-bottom: 1px solid var(--divider-color, #ddd);
+	padding: 1rem 0;
+}
+
+.detailRow {
+	display: flex;
+	padding: 0.5rem 0;
+	border-bottom: 1px solid var(--divider-color, #eee);
+}
+
+.detailRow:last-child {
+	border-bottom: none;
+}
+
+.detailLabel {
+	width: 100px;
+	font-weight: 500;
+	color: var(--secondary-text, #666);
+}
+
+.detailValue {
+	flex: 1;
+	color: var(--primary-text, #000);
+}
+
+.tagsContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.tagsLabel {
+	font-weight: 500;
+	color: var(--secondary-text, #666);
+}
+
+.tags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.tag {
+	background-color: var(--tag-bg, #ffde59);
+	padding: 0.25rem 1rem;
+	border-radius: 1rem;
+	font-size: 0.9rem;
+	color: var(--tag-text, #000);
+}
+
+.actionButtons {
+	display: flex;
+	gap: 1rem;
+	margin-top: auto;
+	padding-top: 1rem;
+}
+
+.subscribeButton {
+	flex: 1;
+	padding: 1rem;
+	background-color: var(--primary-button-bg, #000);
+	color: var(--primary-button-text, #fff);
+	border: none;
+	border-radius: 0.25rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.cartButton {
+	flex: 1;
+	padding: 1rem;
+	background-color: var(--secondary-button-bg, #ffde59);
+	color: var(--secondary-button-text, #000);
+	border: none;
+	border-radius: 0.25rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.loading,
+.error {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-size: 1.2rem;
+	color: var(--error-text, #ff0000);
+}
+
+@media (max-width: 600px) {
+	.bookHeader {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.coverContainer {
+		margin-bottom: 1rem;
+	}
+}
